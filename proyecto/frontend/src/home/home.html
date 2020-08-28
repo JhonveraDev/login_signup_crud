@@ -1,0 +1,15 @@
+{% extends "../templates/base.html" %}
+{% load static %}
+
+{% block title %}Inicio - Prueba CRUD{% endblock %}
+{% block scripts %}
+    <script>
+        var isAuthenticated = "{{user.is_authenticated}}";
+        var userName = "{{user.username}}";
+    </script>
+    <script src="{% static "js/home.js" %}"></script>
+{% endblock %}
+
+{% block content %}
+    <div id="home-container"></div>
+{% endblock %}

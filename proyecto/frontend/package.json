@@ -1,0 +1,28 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.2",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.0",
+    "style-loader": "^1.2.1",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "webpack:build": "rmdir /s /q build || webpack --mode development",
+    "webpack:watch": "rmdir /s /q build || webpack --watch --mode development"
+  },
+  "author": "",
+  "license": "ISC"
+}
